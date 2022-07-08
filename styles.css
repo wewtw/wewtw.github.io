@@ -5,6 +5,7 @@ body{
 #PP {
     width: 80%;
     height: 80%;
+    align-self: center;
 }
 #PN {
     text-align: center;
