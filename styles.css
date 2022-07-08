@@ -1,11 +1,12 @@
 body{
     background-color: darkcyan;
+    align-items: center;
 
 }
 #PP {
     width: 80%;
     height: 80%;
-    align-items: center;
+    
 }
 #PN {
     text-align: center;
