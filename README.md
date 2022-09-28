@@ -1,6 +1,6 @@
 # wewtw.github.io
-Profile page
-Property of Edar Tlis
+<h1>Profile page</h1>
+<h2>Property of Edar Tlis</h2>
 
 https://wewtw.github.io/
 
