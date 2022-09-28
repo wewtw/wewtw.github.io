@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en"> <!--HyperTextMarkupLangue is for content only for styling use css-->
+   
+    <head> <!-- Data about website or meta data (sitetitle info about databases) -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- viewport cent device-width makes a resposive website where the pate tries to be placed well in most devices -->
+        <meta charset="UTF-8"> <!-- Holds atributes selfclosing, here I define a character set that the web page will use. UTF-8 is standard -->
+        <!-- Here title is used to set the title of the tab(usually the website name) on the top of the browser-->
+        <title>
+            ShopNow 
+        </title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body> <!--The "body" holds all the content that will apear on the page -->
+                    
+        <header> 
+             <h1> Welcome to ShopNow</h1> <!-- "h1" or all heading are used for importance "all items or homepage welcome messange" they very in size here I use h1 to give the site a tittle-->
+                    <nav>  <!-- nav is the new html5 way of making classfying a navigation section -->
+                       
+                        <ul> <!-- "ul" or unultered list is a basic bulleted list. There is also "ol" wich gives a numbered list that uses type="i" for roman numerals or letters. 
+                            List are used extensivelly everywhere and can be nested iside one another--> 
+                            <li><a href="shopNow.html"> Home</a></li> <!-- the element "a" stands for anchor and used for hyperlinks-->
+                            <li><a href=""> Categories</a></li>
+                            <li><a href="contacts.html"> Contact US </a> </li> 
+                            <li><a href="music.html">Music</a></li>
+                        </ul>
+                    </nav>
+                    <input type="search" placeholder="search.."> <!--The input type "search" provides a basic search box-->
+        </header>
+        <aside>
+            <!--This will be the sidebar divider -->
+            <h2>Shop by:</h2>
+            <!-- A new sematic tags called "<aside> </aside>" can now be used for things like a side bar but the older div away also works fine-->
+            <section>
+                <h3>Category</h3>
+                <!-- "<section>" is a new sematic used in html5 for things line lists. It can be nested inside aside or div-->
+                <hr> <!-- Makes a simple line "horizontal rule" used to seperate items -->
+                <ul>
+                    <input type="search" placeholder="search.." id="asidesearch">
+                    <li>Home</li>
+                    <!--Html entities can be used to display varius symbols such as less " &lt;"  or grater "&gt;" or the & "&amp;"  
+                        "&quot;" to put quatation. 
+                        "&copy;" to put a copyright symbol.
+                        "&reg;" to display a registered trademark symbol. 
+                        to  wich are overwise reserved for programing
+                        Important part of entitles can use unicode to display little images like a game contorller like so "&#127918;" and can be gotten at https://unicode-table.com/en/1F3AE/
+                         -->
+                    <li>Cameras</li>
+                    <li>Laptops</li>
+                    <li>Phones</li>
+                    <li>Accessories</li>
+                    <li>Others</li>
+        
+                </ul>
+            </section>
+            <section>
+                <h4>Price <span>($)</span></h4>
+                <!-- ($) adds a currencly simbol. A "span" is an alternitive to div, it inline element used to contain or targer parts of the code   -->
+                <hr>
+                <ul>
+                    <li>1-9</li>
+                    <li>10-29</li>
+                    <li>30-59</li>
+                    <li>60-99</li>
+                    <li>100+</li>
+        
+        
+                </ul>
+            </section>
+        
+        </aside>
+        <main>
+            <!-- this "div" will be the products displayed in the middle. 
+                    This can now be idetified witha "<main>" sematic with new html5 rules-->
+            <h2>Contuct Us</h2>
+        
+            <form class="ContuctUsForm" >
+                <!-- The form property creates in imputeble form that information can be written into. It has atributes such as "action and method" action defines where the from text will be send to and method tells which http method will be used-->
+                <div>
+                    <!-- It helps to put the input boxes in seperate divs so they dont run on one line-->
+                    <label for="nameform"> Name: </label> <input type="text" placeholder="Enter Name" id="nameform"
+                        name="CuName">
+                    <!-- There is lots of diffrent "inputs" and there are set by using the "type" atribute. The placeholder atribute puts the replacible guide text inside the from  -->
+                </div>
+        
+                <div>
+                    <!--Important!!! note that id attribute can be given to many properties and than used to bind them to labes, other elements and langueges like css and javascript .
+                            While the "name" atrribute is used to submit a form to the webserver.  
+                            the <lable> element can be used to give more atributes to text -->
+                    <label for="emailform"> Email:</label> <input type="email" placeholder="Enter Email" id="emailform"
+                        name="CuEmail">
+                </div>
+        
+                <div>
+                    <label for="messangefrom"> Messange:</label> <textarea cols="30" rows="5" id="messangeform"
+                        name="CuMessange"></textarea>
+                    <!-- textarea element makes an inputuble form good for long texts. it has atributes like cols and raw that make the form bigger in size -->
+                </div>
+        
+                <!-- <div>
+        
+                        <label for="subject" >Subject:</label>
+                        <select id="subject"> <!-- a "multiple" attribute can be added here to make let the user select more than one option -->
+                <!-- <optgroup> </optgroup> can be used to group options with under a text label-->
+                <!-- <option value="returns">Returns</option>
+                            <option value="faulty_item">Faulty Item </option>
+                            <option value="delivery">Delivery </option>
+                            <option value="order_tracking">Tracking order</option>
+                            <option value="other">Other</option>
+                        </select> <!-- Here i have a new element "select" that is binded to the lable on top. the select element gives a picker menue-->
+                <!-- </div>  -->
+        
+        
+                <div>
+                    <label for="subject">Subject:</label>
+                    <input type="text" list="subjects" id="subject" placeholder="Enter your subject">
+                    <datalist id="subjects">
+                        <option value="Faulty item"></option>
+                        <option value="Delivery"></option>
+                        <option value="Order Tracking"></option>
+                        <option value="Other"></option>
+        
+                    </datalist>
+        
+        
+                </div>
+                <div>
+                    <input type="submit">
+                    <!--input has defult text while button can be used with custom text. this can also have a "type reset that resets the prev entries"-->
+                    <!-- <button type="submit">Submit</button> -->
+                </div>
+                <div>
+                    <p>Subscribe to futire offers by:</p>
+                    <label for="NewsLetterBox">Newsletter</label>
+                    <input type="checkbox" id="NewsLetterBox" name="subscribe" value="NewsLetterBox">
+                    <!-- the "value attribute in checkbox works like the "name" so the data in value will go to the server-->>
+                    <label for="EmailBox">Email</label>
+                    <input type="checkbox" id="EmailBox" name="subscribe" value="EmailBox">
+                    <label for="PostBox">Post</label>
+                    <input type="checkbox" id="PostBox" name="subscribe" value="PostBox">
+                </div>
+        
+                <div>
+                    <p>How would you like the respond?</p>
+                    <label for="phoneResponse">Phone</label>
+                    <input type="radio" id="phoneResponse" name="response" value="phone">
+                    <!--Here the  "name = response" is binded to both so its gruoped and only one button can be clicked at the time-->
+                    <label for="emailResponse">Email</label>
+                    <input type="radio" id="emailResponse" name="response" value="email">
+        
+        
+                </div>
+        
+            </form>
+            <!--
+                <form>
+                <input type="password">
+                used for passwords there is also number, date, color or range(slider with min=0 and max=100 and value=69) inputs
+        
+            </form>
+            -->
+            <iframe class="iframe" src="https://wikipedia.org">
+                <!-- the iframe element is used to nest anther html page into the current page such as google maps or wiki-->
+        
+            </iframe>
+        </main>
+
+        <footer> <!--this div makes the footer there is a new semantic tag called <footer> that can be used here to keep it nicely organized-->
+            <nav> <!-- this is a new sematic used to display major navigation areas in html5-->
+
+                <ul>
+                    <li><a href="index.html"> Home</a></li> <!-- the element "a" stands for anchor and used for hyperlinks-->
+                    <li><a href=""> Categories</a></li>
+                    <li><a href="contacts.html"> Contact US </a> </li> 
+                </ul>
+            </nav>
+          
+        </footer>
+    </body>
+
+
+
+</html> 

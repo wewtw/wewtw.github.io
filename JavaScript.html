@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript-Practice-2</title>
+</head>
+<body>
+    <p id="Function" >Hello</p>
+    <p id='Welcome'>Welcome</p>
+    <p id="Math">Math</p>
+    <p id="p1" >This is my javasript training page</p>
+    <p id="Lorem">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error deserunt iste harum rem nobis inventore magni obcaecati, ipsa nemo placeat voluptatum numquam natus totam veritatis quia aut cum velit perspiciatis.</p>
+    
+    <div id="JSimage">
+        
+
+    </div>
+    
+
+    <ul id="originallist">
+        <li>
+            Apple
+        </li>
+        <li>
+            Microsoft
+        </li>
+    </ul>
+
+    <script>
+        
+       
+        //element iplimintation in javasript
+        
+        // creates an element li (list) and stores it inside the variable (listItem) in javascript 
+        var listItem = document.createElement('li');
+        
+        // add new list item text node 
+        var itemText= document.createTextNode('AMD');
+
+        // adds text to the element
+        listItem.appendChild(itemText);
+       
+        // select parent element the html list (ul)
+        var JSlist = document.getElementById("originallist");
+        
+        JSlist.appendChild(listItem);
+
+        
+        
+        
+        // item replacement in Js: create new list items called non tech to replace items from the old html list(li).  
+        var newListItem=document.createElement('li');
+        var newItemText=document.createTextNode('BlackRock');
+        newListItem.appendChild(newItemText); 
+        //select which item to replace: target the element li than chose the location with the array brackets [] than,
+        //the number of the item in array order [1](microsoft) 
+        var itemToReplace = document.querySelectorAll('li') [1];
+        //Replace the chosen item
+        JSlist.replaceChild(newListItem, itemToReplace);
+
+        // removing items from node
+        //JSlist.removeChild(newListItem)
+
+
+        // Here I add a poragrath as a js node element
+        const paragrath = document.createElement("p");
+        const node = document.createTextNode("This is my node paragrath");
+        paragrath.appendChild(node);
+        const element = document.getElementById('p1');
+        element.appendChild(paragrath);
+        // adding image as a node elemnt in js.
+        var img = document.createElement("img");
+        img.src = "images/JSimage.png";
+        var src = document.getElementById('JSimage');
+        src.appendChild(img);
+        //--------------------------------------------------
+       
+        
+       
+        // Functions 
+
+        // creates a function any name, this perticular one is called a named function. 
+        //There are also anon functions. 
+        function Hello() {alert('hello function');}
+        // invokes the function can be done multiple times
+        Hello();
+        // chaning iner text with and element function 
+        document.getElementById('Function').innerHTML = 'Function element'
+        // Giving funtions arguments
+        function Hello(Name)
+        {document.getElementById('Welcome').innerHTML = 'Hello' + " " + Name;}
+        Hello('Friend!');
+        // Doing Math
+        function bitOfMath(num1, num2, num3)
+        {document.getElementById('Math').innerHTML='Bit of math function the number is =     ' +  num1 * num2 * num3;}
+        bitOfMath(2,10,2)
+
+
+      
+       
+        
+            
+
+    
+
+
+       </script>
+    
+          
+          
+
+     
+</body>
+</html>

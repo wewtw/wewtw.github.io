@@ -1,0 +1,454 @@
+header,
+footer {
+    background: khaki;
+    color: rgb(250, 250, 250);
+    list-style: radial-gradient();
+    align-content: center;
+    text-align: center;
+    word-wrap: break-word;
+
+    top: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+    background-color: rgb(245, 6, 193);
+    border-radius: 1em;
+    padding: 10px;
+    margin: 10px;
+
+
+
+}
+
+/* text-decoration none removes underlines from links (a)*/
+a {
+    text-decoration: none;
+    color: inherit;
+    margin: 5px;
+    padding: 5px;
+    align-self: center;
+
+}
+
+/*Here I will use something that crates behavier like changing color when mouse hovers over called sudo class.*/
+a:hover {
+    color: lime;
+
+}
+
+li:hover {
+    color: green;
+}
+
+ul {
+    color: black;
+    justify-content: center;
+
+}
+
+body {
+    background: repeating-radial-gradient();
+    background-color: khaki;
+    /*border: dashed blue;*/
+    width: auto;
+
+    height: auto;
+
+    color: black;
+    text-align: center;
+    /*word-wrap: break-word;*/
+
+
+
+    font-family: monospace;
+    /* the font family function changes the font of the webpage to any desired.
+     Fonts can also be imported from websites like and linked, like google fronts  */
+
+
+}
+
+.ContuctUsForm {
+    background-color: darkcyan;
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+
+
+}
+
+.iframe {
+    padding: 20px;
+    border-color: black;
+    align-self: start;
+    width: 40vh;
+    height: 40vh;
+    border-radius: 2px;
+}
+
+
+
+/*Using percentages is better for resposive design here Im making the width of the main section 70% and the aside 15% and products to 40%. this make make the website work in a fuild layout style*/
+
+/* The "main" selector links to the main part of the html webpage, the width prop is important in setting the content in the middle */
+main {
+    /*width: 60%;*/
+    border: dashed green;
+    display: inline-block;
+    padding: 0px;
+    width: auto;
+    height: auto;
+}
+
+/* Same as main can be used to alighn the page evenly, padding can be used to align the words and frames*/
+/* Posistion sticky top 0 makes the aside content to be always scrolling down with he user istead of staying in place*/
+aside {
+    display: inline-block;
+    /* position: sticky;*/
+    top: 0;
+    width: 100%;
+    /*padding: 10px , 10px, 10px, 10px;*/
+    border: dashed yellow;
+    vertical-align: top;
+    background-color: khaki;
+}
+
+#asidesearch {
+    border-radius: 2px;
+    border-color: khaki;
+    width: 100%;
+    height: 3em;
+}
+
+#headersearch {
+    border-radius: 2px;
+    border-color: honeydew;
+    width: 30%;
+    height: 2em;
+}
+
+#searchBtn {
+    width: 20%;
+    padding: 10px;
+    display: inline-block;
+}
+.h3pp{
+    text-align: center;
+    align-self: center;
+    margin: 5px;
+    padding: 5px;
+    text-justify:newspaper;
+    font-size: 17px;
+}
+/*The ".product string(selector) is a class(classes start with a . and are used with all the classes ) that links to the product class in the index html file and can edit its styles.
+The "boxsizing" property makes sure that the dicleared with is the total width  */
+.product {
+    box-sizing: border-box;
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid black;
+    width: 100%;
+
+    color: inherit;
+}
+@media (min-with: 800px){
+    .h3pp{
+        font-size: 24px;
+    }
+}
+@media (min-width: 800px) {
+    input [type="search"] {
+        width: 100%;
+        margin-right: 2em;
+    }
+
+    .product {
+        display: inline-block;
+        width: 30%;
+    }
+
+    footer {
+        width: auto;
+    }
+}
+
+@media (min-width: 550px) {
+    input [id="headersearch"] {
+        width: auto;
+        margin-right: 2em;
+    }
+}
+
+@media (min-width: 800px) {
+    aside {
+        width: 20%;
+        position: sticky;
+        display: inline-block;
+    }
+}
+
+@media (min-width: 800px) {
+    main {
+        width: 75%;
+        display: inline-block;
+    }
+}
+
+/*@media (min-width:800px) {body {width: 80%; display: inline-block; }}
+
+/*The "display: inline-block;" makes all the producs line up in a line fom left to right instead of top to bottom */
+
+.button {
+    padding: 10px;
+    display: inline-block;
+
+}
+
+/* Sudo can be used to target an iduvidaul type like the last button on the products */
+.button:last-of-type {
+    background: darkcyan;
+}
+
+/* Name is an Id is used to edit a single element they start with a # and link to ID="name" string */
+#nameform {
+    background: yellow;
+}
+
+#emailform {
+    background: yellow;
+}
+
+/* the image selector can traget all the images and make them fit into the surrounding from*/
+img {
+    width: 100px;
+    height: 100px;
+}
+
+/* "ul" can be remove default margins given buy browsers */
+
+header li {
+    display: inline;
+}
+
+header h1,
+nav {
+    display: inline-block;
+
+}
+
+footer li {
+    display: inline-block;
+}
+
+table {
+    background-color: darkkhaki;
+}
+
+p {
+    word-wrap: inherit;
+    display: inherit;
+    padding: 20px;
+}
+
+td,
+th {
+    border: 1px solid red;
+}
+
+tr:hover {
+    background: gray;
+}
+
+/* tr hover will make it so that the  targeted element will get highlighted */
+
+
+/* li(list items) can be given bollet points with "list-style-type: circle inside;"
+The border with how the frame and make them apear as buttoms */
+li {
+    list-style-type: none inside;
+    line-height: 20px;
+    border: ridge;
+    text-align: center;
+    align-content: center;
+
+}
+
+#Horse {
+
+    align-items: center;
+    display: inline-block;
+    color: khaki;
+}
+
+#projectsUl {
+    font: 2em sans-serif;
+    /*word-wrap: break-word;*/
+    border-radius: 1em;
+    background-color: lavender;
+
+}
+
+.projects {
+    background-color: rgb(245, 6, 193);
+    border-radius: 1em;
+    padding: 10px;
+    margin: 10px;
+    word-wrap: break-word;
+}
+
+
+.contactMe{
+    position: relative;
+    font-size: x-large;
+    align-items: center;
+    
+    text-align: center;
+    margin: 50px;
+    padding: 50px;
+    vertical-align: middle;
+    
+}
+.eyeImg {
+    align-self: center;
+}
+
+.busImg {
+    align-self: center;
+    padding: 5px;
+    margin: 5px;
+}
+
+.packmanImg {
+    align-self: center;
+    padding: 5px;
+    margin: 5px;
+}
+
+.profilePic {
+    width: 400px;
+    height: 320px;
+    border-radius: 50%;
+}
+
+.gridheader {
+    grid-area: header;
+    background-color: cadetblue;
+    padding: 30px;
+    text-align: center;
+    font-size: 24px;
+    border-radius: 12%;
+    height: auto;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'header header header header header header'
+        'left middle middle middle middle right'
+        'footer footer footer footer footer footer';
+    grid-column-gap: 2px;
+}
+
+.left,
+.middle,
+.right {
+    padding: 10px;
+    height: fit-content;
+}
+
+/* Style the left column */
+.left {
+    grid-area: left;
+
+
+}
+
+/* Style the middle column */
+.middle {
+    grid-area: middle;
+
+    margin: 1em;
+    
+
+}
+
+/* Style the right column */
+.right {
+    grid-area: right;
+
+
+}
+
+/* Style the footer */
+.gridfooter {
+    grid-area: footer;
+    padding: 10px;
+    text-align: center;
+    border-radius: 1em;
+}
+
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-areas:
+            'header header header header header header'
+            'left left left left left left'
+            'middle middle middle middle middle middle'
+            'right right right right right right'
+            'footer footer footer footer footer footer';
+    }
+}
+
+.animationsL {
+    width: 80px;
+    height: 80px;
+    position:relative;
+    background-color: red;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+    
+    animation: boxrot 3s linear infinite;
+
+
+}
+.animationsR {
+    width: 80px;
+    height: 80px;
+    position:relative;
+    background-color: red;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+    
+    animation: boxrotR 3s linear infinite;
+
+
+}
+@keyframes boxrot {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
+    0%   {background-color:red; left:0px; top:0px;}
+    
+    50%  {background-color:blue; left:0px; top: 200px;}
+    
+    100% {background-color:black; left:0px; top:0px;}
+}
+
+@keyframes boxrotR {
+    from {
+        transform: rotate(359deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+    0%   {background-color:red; left:0px; top:0px;}
+
+    50%  {background-color:blue; left:0px; top: 200px;}
+    
+    100% {background-color:yellow; left:0px; top:0px;}
+}

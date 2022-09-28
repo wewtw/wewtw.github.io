@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en"> <!--HyperTextMarkupLangue is for content only for styling use css-->
+   
+    <head> <!-- Data about website or meta data (sitetitle info about databases) -->
+        <meta charset="UTF-8"> <!-- Holds atributes selfclosing, here I define a character set that the web page will use. UTF-8 is standard -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- viewport cent device-width makes a resposive website where the pate tries to be placed well in most devices -->
+        <!-- Here title is used to set the title of the tab(usually the website name) on the top of the browser-->
+        <title>
+            ShopNow 
+        </title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body> <!--The "body" holds all the content that will apear on the page -->
+        <header> 
+            <h1> Welcome to ShopNow</h1> <!-- "h1" or all heading are used for importance "all items or homepage welcome messange" they very in size here I use h1 to give the site a tittle-->
+                   <nav>  <!-- nav is the new html5 way of making classfying a navigation section -->
+                      
+                       <ul> <!-- "ul" or unultered list is a basic bulleted list. There is also "ol" wich gives a numbered list that uses type="i" for roman numerals or letters. 
+                           List are used extensivelly everywhere and can be nested iside one another--> 
+                           <li><a href="shopNow.html"> Home</a></li> <!-- the element "a" stands for anchor and used for hyperlinks-->
+                           <li><a href=""> Categories</a></li>
+                           <li><a href="contacts.html"> Contact US </a> </li>
+                           <li><a href="music.html">Music</a></li> 
+                       </ul>
+                   </nav>
+                   <input type="search" placeholder="search.."> <!--The input type "search" provides a basic search box-->
+       </header>
+        <aside>
+            <!--This will be the sidebar divider -->
+            <h2>Shop by:</h2>
+            <!-- A new sematic tags called "<aside> </aside>" can now be used for things like a side bar but the older div away also works fine-->
+            <section>
+                <h3>Category</h3>
+                <!-- "<section>" is a new sematic used in html5 for things line lists. It can be nested inside aside or div-->
+                <hr> <!-- Makes a simple line "horizontal rule" used to seperate items -->
+                <ul>
+                    <input type="search" placeholder="search.." id="asidesearch">
+                    <li>Home</li>
+                    <!--Html entities can be used to display varius symbols such as less " &lt;"  or grater "&gt;" or the & "&amp;"  
+                        "&quot;" to put quatation. 
+                        "&copy;" to put a copyright symbol.
+                        "&reg;" to display a registered trademark symbol. 
+                        to  wich are overwise reserved for programing
+                        Important part of entitles can use unicode to display little images like a game contorller like so "&#127918;" and can be gotten at https://unicode-table.com/en/1F3AE/
+                         -->
+                    <li>Cameras</li>
+                    <li>Laptops</li>
+                    <li>Phones</li>
+                    <li>Accessories</li>
+                    <li>Others</li>
+        
+                </ul>
+            </section>
+            <section>
+                <h4>Price <span>($)</span></h4>
+                <!-- ($) adds a currencly simbol. A "span" is an alternitive to div, it inline element used to contain or targer parts of the code   -->
+                <hr>
+                <ul>
+                    <li>1-9</li>
+                    <li>10-29</li>
+                    <li>30-59</li>
+                    <li>60-99</li>
+                    <li>100+</li>
+        
+        
+                </ul>
+            </section>
+        
+        </aside>
+        <main>  <!-- this "div" will be the products displayed in the middle. 
+            This can now be idetified witha "<main>" sematic with new html5 rules-->
+            <h2>Product-details:</h2>
+            <div class="product"> <!-- this creates a "product" class that can be linked to css and java can be used on all the pages with poducts-->
+                <a href="product-detail.html" > <!-- This links our image to a details page -->
+
+                    <img src="images/audioheadphone.jpg" width="300" > <!-- the <img> is used to for pictures. they can be sourced from a folder or a web hotlink. 
+                    "alt" can be used to alturnatively be used to discribe the product -->
+                </a>
+                
+                <h4> <a href="product-detail.html">Audio Headphones </a> </h4> 
+                <!-- "P" stands for paragrath and can text or just one letter-->
+                <p>$ 79.99</p>
+                <p> Proffessional audio headset by Sennheiser. </p> <!-- "strong" or "B" to bolden the text or "I" or "em" can be used ittitle the text. 
+                    There is also "<del>" wich stands for delate text.
+                    There is also "<ins>" wich inserts a new word to the porograth.
+                    There is "<mark>" wich hilights the a word in yellow.
+                    There is "small" makes the font once size smaller"
+                    They can be nested inside one another-->
+                    
+                    <a href="" > Add To Cart </a>
+            </div>
+
+            <table> <!--This adds a tabble to the page great for nubers and quantities. The table can have its own head body and footer. This property has atributes like "border=1" and "align=center" -->
+                <caption>Buy in Bulk and save more!</caption> <!--- the "<caption>" property sets a tittle to the table-->
+                <thead> <!--- This specifies the head of the table similar to page and keeps it more organized -->
+
+                    <tr> <!-- the <tr> stand for table raw and does what it says it does makes a table raw -->
+                        <th>Quantity</th> <!--The th property can have a  "colspan" atrribute gives the table box more cells so this box has now 2 cells-->
+                        
+                        <th>1</th> <!-- here I use <th> which means table header that basically highlights the items for importance -->
+                        <th>2-4</th>
+                        <th>5-10</th>
+                        <th>10+</th>
+
+                    </tr>
+                </thead>
+                
+                <tbody>
+                    <!-- here I use "<td>" that stands for table data -->
+                    <tr>
+                        <td>Price</td>
+                        <td>79.99</td>
+                        <td>78.99</td>
+                        <td>76.99</td>
+                        <td>74.99</td>
+                    </tr>
+                </tbody>
+            
+                
+              
+
+
+            </table>
+        </main>
+
+        <footer> <!--this div makes the footer there is a new semantic tag called <footer> that can be used here to keep it nicely organized-->
+            <nav> <!-- this is a new sematic used to display major navigation areas in html5-->
+
+                <ul>
+                    <li><a href="index.html"> Home</a></li> <!-- the element "a" stands for anchor and used for hyperlinks-->
+                    <li><a href=""> Categories</a></li>
+                    <li><a href="contacts.html"> Contact US </a> </li> 
+                </ul>
+            </nav>
+          
+        </footer>
+    </body>
+
+
+
+</html> 

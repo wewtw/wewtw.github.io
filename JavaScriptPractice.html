@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript-Parctice-2</title>
+</head>
+<body>
+    <div id="animals"  ></div>
+    <div>
+        <ul id="characters"></ul>
+    </div>
+    <script>
+
+        //This will be about arrays and DOM
+        // running an array of variable animals
+        // var animals = ['cat', 'dog', 'horse'];
+        // adding to empty arrays with a variable name uppercase that will be used for the uppercase methon to trasform the text
+        // var upperCase = [];
+        // this is how to log one of them, beeing dog
+        // console.log(animals[1].toUpperCase());
+        
+        // this would show all of them 
+        //alert(animals);
+
+        // removing item by using the shift method
+        // var animal1 = animals.shift();
+        // console.log(animal1);
+        
+        
+        // using unshift to add elements to the beginning of an array
+        // animals.unshift('turtile', 'snake', 'eagle');
+
+        // using "push" to add elements at the end of an array
+        // animals.push('caw', 'chicken', 'pig', 'sheep');
+
+        // pop to remove the last element from the array
+        // animals.pop();
+
+        // "splice" adds or removes elements at index number 
+        // animals.slice(1,4, 'dragon');
+
+        // reversing an array
+        // animals.reverse();
+
+        // running foreach loop. this will loop throw every element in an array with an alert and not all in one.
+        // animals.forEach(function(animals){
+          //  alert(animals);
+          //dragons.push(animals.toUpperCase());});
+        //document.getElementById(animals).innerHTML = dragons;
+        
+        // using "map" does everything what "loop" does but it also returns a new array with trasformed items
+        // var upperCaseNames = animals.map(function(animals){ return animals.toUpperCase});
+        // document.getElementById("animals").innerHTML = upperCaseNames;
+        //--------------------------
+
+        // arrange elemts of an array to alphabetical order than store inside a new method
+        // var characters = ['Sosruko', 'Beterez', 'Badinoko']
+        // var sortedCharacters = characters.sort();
+
+        // return a new array with each element having a prefix of "Name"
+        // first make a var named sortNames than access the sortedCharacters
+        // var sortNames =  sortedCharacters.map(characters => {return 'Name' + characters});
+        
+        // read the code from the doc
+        // document.getElementById('characters').innerHTML = sortNames;
+        
+        // adding array items to a ul(unaltered list) 
+        var characters = ['Sosruko', 'Peterez', 'Badinoko']
+        var names = '';
+        // adding one by one 
+        //names += characters[0]; + '<br>';
+        //names += characters[1]; + '<br>';
+        //names += characters[2]; + '<br>';
+        
+        // using for loop to read all
+        // "i" stands for incrament
+        // than a condition is set by using characters.lenght; i++
+        // this can save time by repeating each item inside the array instead of writing them all out
+        // because now this is a container other properties can be added to the "ul" like "li"(list)
+        for(var i = 0; i < characters.length; i++ ){}
+        names += '<li>' + characters[i]; + '</li>';
+        
+        document.getElementById('characters').innerHTML = names;
+    </script>
+    
+
+</body>
+</html>
